@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "id": "wb_task_1",
+      "name": "Сбор отзывов Wildberries - Товар 1",
+      "marketplace": "WILDBERRIES",
+      "productUrl": "https://www.wildberries.ru/catalog/YOUR_PRODUCT_ID_HERE",
+      "startDate": "2026-05-01",
+      "endDate": "2026-06-06",
+      "outputFile": "output/reviews_wildberries_1.csv",
+      "downloadPhotos": true,
+      "photosDirectory": "output/photos/wildberries_1"
+    },
+    {
+      "id": "oz_task_1",
+      "name": "Сбор отзывов Ozon - Товар 1",
+      "marketplace": "OZON",
+      "productUrl": "https://www.ozon.ru/product/YOUR_PRODUCT_ID_HERE/",
+      "startDate": "2026-05-01",
+      "endDate": "2026-06-06",
+      "outputFile": "output/reviews_ozon_1.csv",
+      "downloadPhotos": true,
+      "photosDirectory": "output/photos/ozon_1"
+    }
+  ],
+  "schedule": {
+    "enabled": false,
+    "cronExpression": "0 0 2 * * ?",
+    "timezone": "Europe/Moscow"
+  }
+}
